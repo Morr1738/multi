@@ -9,9 +9,10 @@ public class MulitipkationTest {
     public static void main(String[] args) {
       Scanner input = new Scanner(System.in);
       Random random = new Random();
+      int rättsvar = 0;
+      System.out.println("svara på 5 tal i multiplications tabelen");
         for(int spelgånger = 0; spelgånger <= 5; spelgånger++)
         {
-        System.out.println("svara på 5 tal i multiplications tabelen");
         int tal1 = random.nextInt(10) + 1;
         int tal2 = random.nextInt(10) + 1;
         int produkt;
@@ -20,7 +21,8 @@ public class MulitipkationTest {
             System.out.println(tal1 + "*" + tal2);
             int svar = input.nextInt();
             if(svar == produkt){
-                System.out.println("rätt!");               
+                System.out.println("rätt!");
+                rättsvar++;
             }
             else{
                 System.out.println("fel");
